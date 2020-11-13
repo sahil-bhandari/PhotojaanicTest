@@ -1,3 +1,6 @@
+# Photojaanic Test
+
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://github.com/sahil-bhandari/PhotojaanicTest/tree/master)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/sahil-bhandari)
 
