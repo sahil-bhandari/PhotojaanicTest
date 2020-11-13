@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="@dimen/cardview_compat_inset_shadow"
+    android:id="@+id/cardview"
+    android:elevation="1dp">
+    <RelativeLayout
+        android:elevation="70dp"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_margin="7dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/image"
+            android:padding="@dimen/cardview_default_radius"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Post Title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/image" />
+
+        <TextView
+            android:layout_below="@id/title"
+            android:layout_toEndOf="@id/image"
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Lorem ipsum dolor sit amet consectetur adipiscing elit Lorem ipsum dolor sit amet consectetur adipiscing elit Lorem ipsum dolor sit amet consectetur adipiscing elit"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
